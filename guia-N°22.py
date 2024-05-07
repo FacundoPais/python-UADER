@@ -1,4 +1,4 @@
-mochila = ["botella de agua", "comida en lata", "libro de entrenamiento","droga"]
+mochila = ["botella de agua", "comida en lata", "libro de entrenamiento","salbe de luz"]
 
 def usar_la_fuerza(mochila, indice, num_objetos= -1, sable_encontrado=False ):
     if indice <= len(mochila):

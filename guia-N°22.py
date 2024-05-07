@@ -18,4 +18,4 @@ def usar_la_fuerza(mochila, indice, num_objetos= -1, sable_encontrado=False ):
 
 usar_la_fuerza(mochila, 0)
 
-print("PD: que buena saga la star wars")
+print("PD: muy buena saga la star wars")

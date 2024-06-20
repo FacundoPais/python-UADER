@@ -1,14 +1,14 @@
 superheroes = [
-    {'nombre': 'Linterna Verde', 'anio_aparicion': 1940, 'casa': 'DC', 'biografia': 'Posee un anillo de poder'},
-    {'nombre': 'Wolverine', 'anio_aparicion': 1974, 'casa': 'Marvel', 'biografia': 'Tiene garras de adamantium'},
-    {'nombre': 'Dr. Strange', 'anio_aparicion': 1963, 'casa': 'DC', 'biografia': 'Hechicero Supremo'},
-    {'nombre': 'Capitana Marvel', 'anio_aparicion': 1967, 'casa': 'Marvel', 'biografia': 'Tiene poderes cósmicos'},
-    {'nombre': 'Mujer Maravilla', 'anio_aparicion': 1941, 'casa': 'DC', 'biografia': 'Princesa Amazona'},
-    {'nombre': 'Flash', 'anio_aparicion': 1940, 'casa': 'DC', 'biografia': 'El hombre más rápido del mundo'},
-    {'nombre': 'Star-Lord', 'anio_aparicion': 1976, 'casa': 'Marvel', 'biografia': 'Líder de los Guardianes de la Galaxia'},
-    {'nombre': 'Batman', 'anio_aparicion': 1939, 'casa': 'DC', 'biografia': 'El Caballero Oscuro'},
-    {'nombre': 'Spider-Man', 'anio_aparicion': 1962, 'casa': 'Marvel', 'biografia': 'El Hombre Araña'},
-    {'nombre': 'Iron Man', 'anio_aparicion': 1963, 'casa': 'Marvel', 'biografia': 'Hombre en armadura tecnológica'}
+    {'nombre': 'Linterna Verde', 'año_aparicion': 1940, 'casa': 'DC', 'biografia': 'Posee un anillo de poder'},
+    {'nombre': 'Wolverine', 'año_aparicion': 1974, 'casa': 'Marvel', 'biografia': 'Tiene garras de adamantium'},
+    {'nombre': 'Dr. Strange', 'año_aparicion': 1963, 'casa': 'DC', 'biografia': 'Hechicero Supremo'},
+    {'nombre': 'Capitana Marvel', 'año_aparicion': 1967, 'casa': 'Marvel', 'biografia': 'Tiene poderes cósmicos'},
+    {'nombre': 'Mujer Maravilla', 'año_aparicion': 1941, 'casa': 'DC', 'biografia': 'Princesa Amazona'},
+    {'nombre': 'Flash', 'año_aparicion': 1940, 'casa': 'DC', 'biografia': 'El hombre más rápido del mundo'},
+    {'nombre': 'Star-Lord', 'año_aparicion': 1976, 'casa': 'Marvel', 'biografia': 'Líder de los Guardianes de la Galaxia'},
+    {'nombre': 'Batman', 'año_aparicion': 1939, 'casa': 'DC', 'biografia': 'El Caballero Oscuro'},
+    {'nombre': 'Spider-Man', 'año_aparicion': 1962, 'casa': 'Marvel', 'biografia': 'El Hombre Araña'},
+    {'nombre': 'Iron Man', 'año_aparicion': 1963, 'casa': 'Marvel', 'biografia': 'Hombre en armadura tecnológica'}
 ]
 
 def eliminar(superheroes, nombre):
@@ -18,10 +18,10 @@ def eliminar(superheroes, nombre):
             nueva_lista.append(heroe)
     return nueva_lista
 
-def anio_aparicion(superheroes, nombre):
+def año_aparicion(superheroes, nombre):
     for heroe in superheroes:
         if heroe['nombre'] == nombre:
-            return heroe['anio_aparicion']
+            return heroe['año_aparicion']
     return None
 
 def cambiar_casa(superheroes, nombre, nueva_casa):
@@ -42,7 +42,7 @@ def biografia(superheroes, palabras):
 def antes_1963(superheroes, anio):
     resultado = []
     for heroe in superheroes:
-        if heroe['anio_aparicion'] < anio:
+        if heroe['año_aparicion'] < anio:
             resultado.append((heroe['nombre'], heroe['casa']))
     return resultado
 
@@ -81,7 +81,7 @@ def contar_heroes(superheroes):
 superheroes = eliminar(superheroes, 'Linterna Verde')
 
 # b
-anio_wolverine = anio_aparicion(superheroes, 'Wolverine')
+anio_wolverine = año_aparicion(superheroes, 'Wolverine')
 print(f'Año de aparición de Wolverine: {anio_wolverine}')
 
 # c
